@@ -108,7 +108,6 @@ class ActionBar extends StatelessWidget {
                     RaisedButton(
                       child: const Text('Remove Completed'),
                       onPressed:
-                          //list.hasCompletedTodos ? list.removeCompleted : null,
                           list.canRemoveAllCompleted ? list.removeCompleted : null,
                     ),
                     RaisedButton(
