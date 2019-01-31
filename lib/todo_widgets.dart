@@ -3,7 +3,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:mobx_todo_example/todos.dart';
 
 class TodoExample extends StatefulWidget {
-  const TodoExample();
+  //const TodoExample();
 
   @override
   State<StatefulWidget> createState() => _TodoExampleState();
@@ -108,7 +108,7 @@ class ActionBar extends StatelessWidget {
                     RaisedButton(
                       child: const Text('Remove Completed'),
                       onPressed:
-                          list.hasCompletedTodos ? list.removeCompleted : null,
+                          (list.hasCompletedTodos) ? list.removeCompleted : null,
                     ),
                     RaisedButton(
                       child: const Text('Mark All Completed'),
